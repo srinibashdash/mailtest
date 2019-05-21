@@ -1,0 +1,11 @@
+@echo off
+
+set message=%2
+
+set message=%message:|=%
+set message=%message:'=%
+set message=%message:"=%
+
+
+C:\Users\Administrator\Desktop\uipath\UiRobot.exe -f C:\Testbot\Gmailactivity\Openmail.xaml -input "{'source': '%1', 'subject': '%message%'}"
+
